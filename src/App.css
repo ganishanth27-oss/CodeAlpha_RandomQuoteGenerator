@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1e293b;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  background: #f5f7ff;
+}
+
+.quote-container {
+  width: 100%;
+  max-width: 650px;
+  text-align: center;
+}
+
+/* Header */
+
+.header {
+  margin-bottom: 25px;
+}
+
+.quote-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #4f46e5;
+  color: white;
+  font-size: 32px;
+  font-family: Georgia, serif;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.header p {
+  margin: 8px 0 0;
+  color: #64748b;
+  font-size: 15px;
+}
+
+/* Quote Card */
+
+.quote-card {
+  position: relative;
+  min-height: 280px;
+  padding: 55px 45px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
+}
+
+.quote-mark {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  color: #c7d2fe;
+  font-family: Georgia, serif;
+  font-size: 65px;
+  line-height: 1;
+}
+
+.quote-text {
+  margin: 0;
+  max-width: 540px;
+  color: #1e293b;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+.quote-author {
+  margin: 25px 0 0;
+  color: #4f46e5;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Button */
+
+.generate-button {
+  width: 100%;
+  margin-top: 18px;
+  padding: 13px;
+  border: none;
+  border-radius: 9px;
+  background: #4f46e5;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.generate-button:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+/* Footer */
+
+footer {
+  margin-top: 25px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+footer strong {
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .app {
+    padding: 25px 15px;
+  }
+
+  .header h1 {
+    font-size: 26px;
+  }
+
+  .quote-card {
+    min-height: 270px;
+    padding: 55px 25px 35px;
+  }
+
+  .quote-text {
+    font-size: 20px;
+  }
+
+  .quote-mark {
+    left: 18px;
+  }
+}
